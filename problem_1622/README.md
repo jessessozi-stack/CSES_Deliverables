@@ -36,7 +36,9 @@ Running Tests
 To run all verification tests (including CSES test vectors and the micro-benchmark output):
 
 Bash
+```
 cargo test -- --nocapture
+````
 
 Benchmark Summary (from benchmark.md)
 Running a micro-benchmark on a representative test string (aabacde) yields the following performance profile:
