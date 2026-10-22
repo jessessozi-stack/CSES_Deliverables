@@ -1,3 +1,4 @@
+#[allow(dead_code)]
 pub fn solve(input: &str) -> String {
     let mut lines = input.lines();
     let n_line = match lines.next() {
