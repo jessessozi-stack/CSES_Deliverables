@@ -1,0 +1,24 @@
+[package]
+name = "problem_1621"
+version = "0.1.0"
+edition = "2018"
+description = """"""
+authors = [ "swen-bot <swen-bot@users.noreply.github.com>" ]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+
+[dev-dependencies]
+assert_cmd = "2.2.0"
+
+[build-dependencies]
+reqwest = { version = "0.11", features = ["blocking", "cookies"] }
+scraper = "0.13"
+zip = "0.6"
+dotenvy = "0.15" # Better than 'dotenv'
+
+# Ensure these files are processed and included
+[gen]
+include = [".gitignore", ".env"]
