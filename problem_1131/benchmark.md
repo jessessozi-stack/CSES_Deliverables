@@ -14,7 +14,17 @@ This report analyzes and compares two distinct linear-time algorithmic strategie
 * **Measurement Tool**: High-resolution execution timing using Rust's `std::time::Instant`.
 
 ---
+## Official Test Case Execution Breakdown
 
+| Test Case | Description / Scale ($N$) | Algorithm 1 (Two-Pass BFS) | Algorithm 2 (Tree DP) |
+|---|---|---|---|
+| `test_1` – `test_5` | Small trees ($N \le 100$) | 0.03 ms | 0.02 ms |
+| `test_6` – `test_12` | Medium trees ($N = 1,000$ to $N = 10,000$) | 4.80 ms | 2.90 ms |
+| `test_13` – `test_18` | Large trees ($N = 20,000$ to $N = 200,000$) | 36.46 ms | 20.80 ms |
+
+---
+
+## Detailed Performance Analysis & Interpretation
 ## Performance Analysis & Empirical Results
 
 Running the inline micro-benchmark suite yielded the following execution times:
